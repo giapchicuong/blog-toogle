@@ -1,13 +1,135 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+html {
+  font-family: "Poppins";
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.max-container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  min-height: 800px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 10px;
+  min-height: 100vh;
+}
+.header-title {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.item-title {
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.item-author {
+}
+
+.item-createdAt {
+}
+
+.item-description {
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+.item-bottom {
+  padding-top: 25px;
+
+  height: 70px;
+}
+.line {
+  border-bottom: 1px solid #f3f3f3;
+  margin: 0 25px;
+}
+.item-replies {
+  font-weight: 400;
+  font-size: 13px;
+  max-width: 100px;
+  text-align: center;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.item-replies:hover {
+  color: #3ea6ff;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: #cfe3f7;
+}
+.comment-list {
+  display: none;
+  padding-top: 20px;
+}
+.active {
+  display: block;
+}
+
+.comment-item {
+  display: flex;
+  gap: 10px;
+  padding: 20px 30px;
+}
+
+.comment-item_left {
+}
+.comment-item_left > img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.comment-item_right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-item_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-item_author {
+  font-size: 14px;
+  color: #6b5b5b;
+}
+
+.comment-item_time {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.comment-item_messages {
+  font-size: 14px;
+}
+.comment-item_button {
+  height: 40px;
+}
+.comment-item_button > button {
+  font-size: 14px;
+  color: #444444;
+  max-width: 100px;
+  text-align: center;
+  padding: 8px 16px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.comment-item_button > button:hover {
+  color: #3ea6ff;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: #cfe3f7;
 }
